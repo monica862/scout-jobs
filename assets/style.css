@@ -1,0 +1,152 @@
+:root {
+    --ink: #111517;
+    --ink-soft: #4b4440;
+    --muted: #8a7f76;
+    --paper: #fffbe7;
+    --card: #ffffff;
+    --line: #f1e4c8;
+    --accent: #e06d2b;
+    --accent-dark: #c85a1c;
+    --accent-soft: #fbe6d6;
+    --plum: #6c1845;
+    --gold: #f2ce7d;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Lato", system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  header.top {
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+  }
+  header.top .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 18px; padding-bottom: 18px;
+  }
+  .brand {
+    font-family: "Ubuntu", system-ui, sans-serif;
+    font-weight: 600; font-size: 24px; letter-spacing: -0.01em;
+    color: var(--ink); text-decoration: none;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .brand .logo { height: 72px; width: auto; display: block; }
+  .top-link { font-size: 14px; color: var(--ink-soft); text-decoration: none; }
+  .top-link:hover { color: var(--accent); }
+
+  .hero { padding: 56px 0 32px; }
+  .eyebrow {
+    display: inline-block; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--plum); background: var(--gold);
+    padding: 5px 12px; border-radius: 999px; margin-bottom: 18px;
+  }
+  h1 {
+    font-family: "Ubuntu", system-ui, sans-serif;
+    font-weight: 600; font-size: clamp(34px, 6vw, 48px);
+    line-height: 1.1; letter-spacing: -0.01em; margin: 0 0 10px; color: var(--accent);
+  }
+  .company { font-size: 20px; color: var(--ink-soft); margin: 0 0 28px; }
+  .company strong { color: var(--ink); font-weight: 600; }
+
+  .facts {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1px; background: var(--line);
+    border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
+  }
+  .fact { background: var(--card); padding: 16px 18px; }
+  .fact .k { font-size: 12px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); font-weight: 600; }
+  .fact .v { font-size: 16px; font-weight: 600; margin-top: 4px; }
+  .fact .s { font-size: 13px; color: var(--ink-soft); }
+
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; align-items: center; }
+  .btn {
+    display: inline-block; background: var(--accent); color: #fff;
+    text-decoration: none; font-weight: 600; font-size: 15px;
+    padding: 13px 22px; border-radius: 10px;
+    transition: background .15s ease;
+  }
+  .btn:hover { background: var(--accent-dark); }
+  .cta-note { font-size: 14px; color: var(--ink-soft); }
+
+  .urgent {
+    margin-top: 28px; display: flex; gap: 12px; align-items: flex-start;
+    background: #fdf0c9; border: 1px solid var(--gold); color: var(--plum); border-radius: 12px;
+    padding: 14px 16px; font-size: 15px;
+  }
+  .urgent .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--plum); margin-top: 8px; flex: none; }
+
+  section.block { padding: 36px 0; border-top: 1px solid var(--line); }
+  h2 {
+    font-family: "Ubuntu", system-ui, sans-serif; font-weight: 600;
+    font-size: 24px; letter-spacing: -0.01em; margin: 0 0 14px;
+    color: var(--plum);
+    display: inline-block; padding-bottom: 4px; border-bottom: 3px solid var(--gold);
+  }
+  p { margin: 0 0 14px; color: var(--ink); }
+  .lead { font-size: 18px; color: var(--ink); }
+
+  ul.clean { list-style: none; padding: 0; margin: 0; }
+  ul.clean li {
+    position: relative; padding: 0 0 12px 26px; color: var(--ink);
+  }
+  ul.clean li::before {
+    content: ""; position: absolute; left: 4px; top: 10px;
+    width: 8px; height: 8px; border-radius: 2px; background: var(--plum);
+  }
+  ul.clean li strong { font-weight: 600; }
+  .sub { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--plum); margin: 22px 0 10px; }
+
+  .steps { counter-reset: s; display: grid; gap: 12px; }
+  .step {
+    counter-increment: s; display: flex; gap: 16px; align-items: flex-start;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px;
+  }
+  .step::before {
+    content: counter(s); flex: none; width: 30px; height: 30px; border-radius: 50%;
+    background: var(--plum); color: var(--gold); font-weight: 600;
+    display: grid; place-items: center; font-size: 14px;
+  }
+  .step .t { font-weight: 600; }
+  .step .d { font-size: 14px; color: var(--ink-soft); }
+
+  .recruiter {
+    background: var(--plum); color: var(--paper); border-radius: 16px;
+    padding: 28px; margin: 8px 0 0;
+  }
+  .recruiter .who { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+  .avatar {
+    width: 48px; height: 48px; border-radius: 50%; background: var(--gold);
+    color: var(--plum); display: grid; place-items: center;
+    font-family: "Ubuntu", system-ui, sans-serif; font-size: 20px; font-weight: 600;
+  }
+  .recruiter .name { font-weight: 600; font-size: 17px; }
+  .recruiter .role { font-size: 14px; color: var(--gold); }
+  .recruiter p { color: var(--paper); }
+  .contact-line { font-size: 14px; color: var(--gold); margin-top: 14px; }
+
+  footer { padding: 24px 0; font-size: 13px; background: var(--accent); color: var(--paper); margin-top: 36px; text-align: center; }
+  footer a { color: var(--paper); }
+
+  .roles { display: grid; gap: 16px; padding-bottom: 24px; }
+  .role-card {
+    display: block; text-decoration: none; color: var(--ink);
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 24px; transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+  }
+  .role-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(108,24,69,.08); }
+  .role-card .eyebrow { margin-bottom: 12px; font-size: 11px; }
+  .rc-title { font-family: "Ubuntu", system-ui, sans-serif; font-weight: 700; font-size: 22px; color: var(--plum); }
+  .rc-co { color: var(--ink-soft); margin: 2px 0 10px; }
+  .rc-blurb { margin: 0 0 16px; }
+  .rc-foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: 14px; }
+  .rc-comp { font-weight: 700; }
+  .rc-link { color: var(--accent); font-weight: 700; }
