@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Founding Account Executive at GetCrux | Scout</title>
+<link rel="icon" href="../assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #111517;
+    --ink-soft: #4b4440;
+    --muted: #8a7f76;
+    --paper: #fffbe7;
+    --card: #ffffff;
+    --line: #f1e4c8;
+    --accent: #e06d2b;
+    --accent-dark: #c85a1c;
+    --accent-soft: #fbe6d6;
+    --plum: #6c1845;
+    --gold: #f2ce7d;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Lato", system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  header.top {
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+  }
+  header.top .wrap {
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 18px; padding-bottom: 18px;
+  }
+  .brand {
+    font-family: "Ubuntu", system-ui, sans-serif;
+    font-weight: 600; font-size: 24px; letter-spacing: -0.01em;
+    color: var(--ink); text-decoration: none;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .brand .logo { height: 72px; width: auto; display: block; }
+  .top-link { font-size: 14px; color: var(--ink-soft); text-decoration: none; }
+  .top-link:hover { color: var(--accent); }
+
+  .hero { padding: 56px 0 32px; }
+  .eyebrow {
+    display: inline-block; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--plum); background: var(--gold);
+    padding: 5px 12px; border-radius: 999px; margin-bottom: 18px;
+  }
+  h1 {
+    font-family: "Ubuntu", system-ui, sans-serif;
+    font-weight: 600; font-size: clamp(34px, 6vw, 48px);
+    line-height: 1.1; letter-spacing: -0.01em; margin: 0 0 10px; color: var(--accent);
+  }
+  .company { font-size: 20px; color: var(--ink-soft); margin: 0 0 28px; }
+  .company strong { color: var(--ink); font-weight: 600; }
+
+  .facts {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1px; background: var(--line);
+    border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
+  }
+  .fact { background: var(--card); padding: 16px 18px; }
+  .fact .k { font-size: 12px; text-transform: uppercase; letter-spacing: 0.07em; color: var(--muted); font-weight: 600; }
+  .fact .v { font-size: 16px; font-weight: 600; margin-top: 4px; }
+  .fact .s { font-size: 13px; color: var(--ink-soft); }
+
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; align-items: center; }
+  .btn {
+    display: inline-block; background: var(--accent); color: #fff;
+    text-decoration: none; font-weight: 600; font-size: 15px;
+    padding: 13px 22px; border-radius: 10px;
+    transition: background .15s ease;
+  }
+  .btn:hover { background: var(--accent-dark); }
+  .cta-note { font-size: 14px; color: var(--ink-soft); }
+
+  .urgent {
+    margin-top: 28px; display: flex; gap: 12px; align-items: flex-start;
+    background: #fdf0c9; border: 1px solid var(--gold); color: var(--plum); border-radius: 12px;
+    padding: 14px 16px; font-size: 15px;
+  }
+  .urgent .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--plum); margin-top: 8px; flex: none; }
+
+  section.block { padding: 36px 0; border-top: 1px solid var(--line); }
+  h2 {
+    font-family: "Ubuntu", system-ui, sans-serif; font-weight: 600;
+    font-size: 24px; letter-spacing: -0.01em; margin: 0 0 14px;
+    color: var(--plum);
+    display: inline-block; padding-bottom: 4px; border-bottom: 3px solid var(--gold);
+  }
+  p { margin: 0 0 14px; color: var(--ink); }
+  .lead { font-size: 18px; color: var(--ink); }
+
+  ul.clean { list-style: none; padding: 0; margin: 0; }
+  ul.clean li {
+    position: relative; padding: 0 0 12px 26px; color: var(--ink);
+  }
+  ul.clean li::before {
+    content: ""; position: absolute; left: 4px; top: 10px;
+    width: 8px; height: 8px; border-radius: 2px; background: var(--plum);
+  }
+  ul.clean li strong { font-weight: 600; }
+  .sub { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; color: var(--plum); margin: 22px 0 10px; }
+
+  .steps { counter-reset: s; display: grid; gap: 12px; }
+  .step {
+    counter-increment: s; display: flex; gap: 16px; align-items: flex-start;
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px;
+  }
+  .step::before {
+    content: counter(s); flex: none; width: 30px; height: 30px; border-radius: 50%;
+    background: var(--plum); color: var(--gold); font-weight: 600;
+    display: grid; place-items: center; font-size: 14px;
+  }
+  .step .t { font-weight: 600; }
+  .step .d { font-size: 14px; color: var(--ink-soft); }
+
+  .recruiter {
+    background: var(--plum); color: var(--paper); border-radius: 16px;
+    padding: 28px; margin: 8px 0 0;
+  }
+  .recruiter .who { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+  .avatar {
+    width: 48px; height: 48px; border-radius: 50%; background: var(--gold);
+    color: var(--plum); display: grid; place-items: center;
+    font-family: "Ubuntu", system-ui, sans-serif; font-size: 20px; font-weight: 600;
+  }
+  .recruiter .name { font-weight: 600; font-size: 17px; }
+  .recruiter .role { font-size: 14px; color: var(--gold); }
+  .recruiter p { color: var(--paper); }
+  .contact-line { font-size: 14px; color: var(--gold); margin-top: 14px; }
+
+  footer { padding: 24px 0; font-size: 13px; background: var(--accent); color: var(--paper); margin-top: 36px; text-align: center; }
+  footer a { color: var(--paper); }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../" aria-label="Scout Talent home">
+      <img src="../assets/logo.png" alt="Scout Talent logo" class="logo">
+    </a>
+    <a class="top-link" href="../">All open roles &rarr;</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <span class="eyebrow">Founding AE</span>
+    <h1>Founding Account Executive</h1>
+    <p class="company">at <strong>GetCrux</strong> &middot; Remote (US)</p>
+
+    <div class="facts">
+      <div class="fact"><div class="k">OTE</div><div class="v">$240K - $320K</div><div class="s">50/50 split, 3-month ramp</div></div>
+      <div class="fact"><div class="k">Base</div><div class="v">$120K - $160K</div><div class="s">plus 0.1% - 0.25% equity</div></div>
+      <div class="fact"><div class="k">Experience</div><div class="v">3 - 10 years</div><div class="s">mid-market or enterprise AE</div></div>
+      <div class="fact"><div class="k">Stage</div><div class="v">YC-backed seed</div><div class="s">$2.6M+ raised</div></div>
+    </div>
+
+    <div class="cta-row">
+      <a class="btn" href="https://calendar.app.google/RUinGAqwi7AAYC8A8">Book 15 minutes to talk</a>
+      <span class="cta-note">No resume needed for a first chat.</span>
+    </div>
+
+    <div class="urgent">
+      <span class="dot" aria-hidden="true"></span>
+      <div><strong>Pipeline is already there.</strong> GetCrux grew 3X in 3 months, and inbound is bringing in more leads than the founders can manage.</div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>About GetCrux</h2>
+    <p class="lead">GetCrux is an AI creative strategist for performance marketers.</p>
+    <p>Ad creative is now the biggest lever on ad platforms, but most teams can't tell why an ad works, so they guess and copy their last winner. GetCrux finds the winning patterns across 100+ parameters, like hooks, messaging, storyline, music and pacing, and recommends exactly what to launch next.</p>
+    <p>It's backed by Y Combinator and used by growth and creative teams at Fortune 1000 companies, fast-growing YC startups, and consumer apps across the US.</p>
+  </section>
+
+  <section class="block">
+    <h2>The opportunity</h2>
+    <p class="lead">Help GetCrux close faster and get to $10M ARR next year.</p>
+    <p>You'd work directly with the co-founders to run deals end to end, sharpen the ICP and positioning, and turn a strong top of funnel into revenue.</p>
+  </section>
+
+  <section class="block">
+    <h2>What you'll own</h2>
+    <ul class="clean">
+      <li><strong>The full funnel.</strong> Discovery, demo, team alignment, pilot, and conversion.</li>
+      <li><strong>Sourcing.</strong> Find new opportunities through creative targeting, account-based marketing, events, and conferences.</li>
+      <li><strong>Enterprise deals.</strong> Multi-thread larger deals alongside the founders.</li>
+      <li><strong>Pilots.</strong> Partner with customer success and engineering to make pilots land.</li>
+      <li><strong>Upsell.</strong> Spot expansion opportunities across the existing customer base.</li>
+      <li><strong>ICP and positioning.</strong> Shape who GetCrux sells to and how, with the founders and GTM team.</li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <h2>What they're looking for</h2>
+    <div class="sub">Must-haves</div>
+    <ul class="clean">
+      <li>3 - 10 years as a mid-market or enterprise AE at a seed to Series C startup</li>
+      <li>Full-cycle closing, including pipeline you sourced yourself</li>
+      <li>US work authorization (no visa sponsorship)</li>
+    </ul>
+    <div class="sub">Bonus points</div>
+    <ul class="clean">
+      <li>You've been a founding AE before</li>
+      <li>You've sold martech, adtech, or marketing intelligence to growth or performance marketers or e-commerce buyers</li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <h2>Interview process</h2>
+    <div class="steps">
+      <div class="step"><div><div class="t">Intro chat</div><div class="d">With Atharva, co-founder</div></div></div>
+      <div class="step"><div><div class="t">Deep dive</div><div class="d">With Atharva</div></div></div>
+      <div class="step"><div><div class="t">Founder deep dive</div><div class="d">With both co-founders, Atharva and Himan</div></div></div>
+      <div class="step"><div><div class="t">In-person meeting</div><div class="d">With the co-founders</div></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2>Interested?</h2>
+    <div class="recruiter">
+      <div class="who">
+        <div class="avatar" aria-hidden="true">M</div>
+        <div>
+          <div class="name">Monica</div>
+          <div class="role">Founder &amp; Recruiter, Scout</div>
+        </div>
+      </div>
+      <p>I'm recruiting for this role. If it sounds like you, or you want to know more before deciding, grab a time and we'll talk it through. Happy to share more on the team, comp, and what the first few months look like.</p>
+      <div class="cta-row" style="margin-top:18px">
+        <a class="btn" href="https://calendar.app.google/RUinGAqwi7AAYC8A8">Book a time with me</a>
+      </div>
+      <div class="contact-line">Or email me: monica@letscout.co</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">Scout Talent &middot; Recruiting for startups and mission-driven teams &middot; <a href="https://letscout.co">letscout.co</a></div>
+</footer>
+
+</body>
+</html>
