@@ -16,6 +16,7 @@ ROLES = [
     {
         "slug": "getcrux-founding-ae",
         "active": True,
+        "listed": False,
         "title": "Founding Account Executive",
         "company": "GetCrux",
         "location": "Remote (US)",
@@ -62,6 +63,7 @@ ROLES = [
     {
         "slug": "getcrux-founding-csm",
         "active": True,
+        "listed": False,
         "title": "Founding Customer Success Manager",
         "company": "GetCrux",
         "location": "Remote (US)",
@@ -109,6 +111,7 @@ ROLES = [
     {
         "slug": "turtles-head-of-customer-support",
         "active": True,
+        "listed": False,
         "title": "Head of Customer Support",
         "company": "Turtles",
         "location": "Remote (US or Canada)",
@@ -219,6 +222,7 @@ ROLES = [
     {
         "slug": "dealops-founding-ae",
         "active": True,
+        "listed": False,
         "title": "Founding Account Executive",
         "company": "Dealops",
         "location": "San Francisco, in person",
@@ -259,6 +263,161 @@ ROLES = [
             ("Hiring manager call", "30 minutes"),
             ("Take-home and review", "30 minutes"),
             ("Onsite", "2 - 3 hours. Walk through your account strategy and prospecting plan."),
+        ],
+    },
+    {
+        "slug": "p1-ai-founding-ae",
+        "active": True,
+        "title": "Founding Account Executive",
+        "company": "P-1 AI",
+        "location": "Remote (South Bay or Canada)",
+        "tag": "First AE hire",
+        "card_comp": "$300K - $400K OTE",
+        "card_blurb": "Be the first AE at a $73M-backed startup building an AI engineer for the physical world, selling into industrial giants.",
+        "facts": [
+            ("OTE", "$300K - $400K", "50/50, uncapped with accelerators"),
+            ("Base", "$150K - $200K", "plus competitive equity"),
+            ("Experience", "4+ years", "selling AI to industrial customers"),
+            ("Stage", "Series A", "$73M raised"),
+        ],
+        "callout": ("Now hiring two.", "P-1 AI just expanded this search from one founding AE to two."),
+        "about_title": "About P-1 AI",
+        "about": {
+            "lead": "P-1 AI is building engineering AGI for the physical world.",
+            "paras": [
+                "Its AI engineer, Archie, has a quantitative intuition for the product design space and uses the same complex engineering tools as its human teammates to help design physical systems.",
+            ],
+        },
+        "opportunity": {
+            "lead": "Be P-1 AI's first AE and shape the go-to-market for an entirely new category.",
+            "paras": ["You'd win new enterprise customers among some of the world's most complex industrial organizations, with real agency over the role, the strategy, and the commercial playbook."],
+        },
+        "own": [
+            ("Net-new acquisition.", "Identify strategic accounts, find a way in, and run discovery, technical validation, negotiation, contracting, and close."),
+            ("Pipeline.", "Build it through outbound, your network, events, referrals, and whatever else works."),
+            ("Deployment partnership.", "Work with Forward Deployed Engineers and Deployment Managers to validate scope and hand off customers with clear success criteria."),
+            ("The playbook.", "Shape messaging, collateral, and events for a brand new category."),
+        ],
+        "must": [
+            "4+ years as an AE selling AI, ideally agentic, to industrial customers like data centers, automotive, or aerospace and defense",
+            "You've built enterprise pipeline from scratch at an early-stage startup",
+            "Work authorization without visa sponsorship",
+        ],
+        "bonus": [
+            "Sales experience at an engineering simulation or physics-AI company",
+        ],
+        "steps": [
+            ("Recruiter screen", "With me"),
+            ("Behavioral interview", "Your background and fit (45 min)"),
+            ("Sales interview", "A deep dive on how you run sales processes (60 min)"),
+            ("CEO interview", "Culture and mission (30 min)"),
+        ],
+    },
+    {
+        "slug": "hyphenate-customer-success-manager",
+        "active": True,
+        "title": "Customer Success Manager",
+        "company": "Hyphenate",
+        "location": "New York (Midtown South), in office",
+        "tag": "First CSM",
+        "card_comp": "$200K - $260K OTE",
+        "card_blurb": "Be the first CSM at an AI finance platform, owning go-lives, renewals and expansion with Controllers and CFOs.",
+        "facts": [
+            ("OTE", "$200K - $260K", "about 70/30, tied to renewals and NRR"),
+            ("Base", "$140K - $180K", "plus competitive equity"),
+            ("Experience", "3+ years", "CS, AM, or implementation in fintech"),
+            ("Stage", "Series A", "backed by Foundation Capital"),
+        ],
+        "callout": ("Brand new search.", "Hyphenate just opened this role, so you'd be among the first candidates they see."),
+        "about_title": "About Hyphenate",
+        "about": {
+            "lead": "Hyphenate is building the AI operating system for the CFO office.",
+            "paras": [
+                "Its audit-ready AI agents connect to a company's finance stack (ERPs, banks, billing, payroll, CRM, contracts) and automate order-to-cash, record-to-report, treasury, financial reporting, and audit readiness, so finance teams review exceptions while AI does the rest.",
+                "Backers include Foundation Capital, BoldCap, Perplexity CEO Aravind Srinivas, and finance leaders from Zuora, Ramp, Gusto, and the Big Four.",
+            ],
+        },
+        "opportunity": {
+            "lead": "Be Hyphenate's first Customer Success Manager, and the one owner each customer knows by name.",
+            "paras": [
+                "Customers hand real accounting work to Hyphenate's agents: revenue schedules, cash application, reconciliations, accruals, and close. This isn't a check-in and QBR role. You'd sit in technical accounting conversations with Controllers and CFOs, own go-lives, retention, and expansion, and build the CS playbook as the team grows.",
+                "You'd report to the CRO, who was employee #6 at FloQast and scaled its go-to-market team from zero to 30+.",
+            ],
+        },
+        "own": [
+            ("Your book.", "Own accounts from signed contract through go-live, renewal, and expansion."),
+            ("Onboarding.", "Run kickoff with the solutions team: success criteria, timelines, stakeholders, and go-live milestones."),
+            ("Outcomes.", "Quantify impact in days to close, hours returned, and cash applied, and put it in front of the CFO."),
+            ("Expansion and renewals.", "Partner with AEs to grow accounts, and flag risk early with a plan to fix it."),
+            ("The playbook.", "Build onboarding, account health, business reviews, and renewal and expansion motions."),
+        ],
+        "must": [
+            "A background in Big 4 audit or assurance, or in-house corporate accounting (ex-accountant or CPA)",
+            "3+ years as a CSM, account manager, or implementation manager at a B2B fintech or accounting software company",
+            "You've owned a book of mid-market or enterprise accounts with retention, renewal, and expansion targets",
+            "US work authorization (no visa sponsorship)",
+        ],
+        "bonus": [
+            "Experience at accounting software companies like FloQast or Workday",
+        ],
+        "steps": [
+            ("Intro call", "With David McCutcheon, CRO (30 min)"),
+            ("Playbook and accounting deep dive", "With solutions leadership (45 min)"),
+            ("Working session", "Take a sample customer from kickoff to renewal and present a 30/60/90-day plan (60 min)"),
+            ("Final interview", "With the CEO (45 min)"),
+        ],
+    },
+    {
+        "slug": "antares-labs-business-development-lead",
+        "active": True,
+        "title": "Business Development Lead",
+        "company": "Antares Labs",
+        "location": "Remote (US), 30-40% travel",
+        "tag": "First BD hire",
+        "card_comp": "$120K - $180K base + commission",
+        "card_blurb": "Work side by side with the CRO selling $500K-1M AI engagements to C-suites at major commercial real estate firms.",
+        "facts": [
+            ("Base", "$120K - $180K", "plus commission and equity"),
+            ("Deal size", "$500K - $1M", "to C-level execs"),
+            ("Experience", "3 - 7 years", "client-facing real estate"),
+            ("Backed by", "Fifth Wall", "Base10, Bloomberg Beta"),
+        ],
+        "callout": ("Learn from the CRO.", "You'd be the first BD hire, working side by side with the Chief Revenue Officer from day one."),
+        "about_title": "About Antares Labs",
+        "about": {
+            "lead": "Antares Labs is the AI orchestration platform for commercial real estate firms.",
+            "paras": [
+                "It unifies siloed property management, leasing, finance, and CapEx data into a governed decision layer that delivers explainable recommendations and AI-agent-driven actions on decisions like acquisitions diligence, revenue and occupancy, CAM recovery, and tenant relationships.",
+                "Antares is backed by Fifth Wall, Base10 Partners, Bloomberg Beta, and Sandwith Ventures, and already works with some of the most recognized firms in CRE.",
+            ],
+        },
+        "opportunity": {
+            "lead": "Be the first Business Development hire, working side by side with the CRO.",
+            "paras": [
+                "You'll start by supporting active deals and building pipeline, then take ownership of your own accounts as you ramp. Deals are $500K-1M consulting and custom software builds sold to C-level executives at $1-50B real estate companies. One day you're polishing a board-ready deck, the next you're across the table from a CEO.",
+            ],
+        },
+        "own": [
+            ("Pipeline.", "Research institutional investors, PE real estate firms, owner-operators, and developers, and use your CRE network for warm introductions."),
+            ("Deals.", "Prepare for and join client meetings, build pitch decks, proposals, and SOWs, and keep every deal moving."),
+            ("The engine.", "Own CRM hygiene and help the CRO with pipeline reviews, forecasts, and sales materials."),
+            ("Being in the room.", "Represent Antares at industry conferences, client dinners, and executive gatherings."),
+        ],
+        "must": [
+            "You work at a real estate firm or serve real estate clients (brokerage, investment firms, owner-operators, developers, REITs, or RE banking or consulting)",
+            "Direct, day-to-day contact with C-level executives, investors, or decision-makers",
+            "3 - 7 years in client- or investor-facing real estate roles",
+            "Willing to travel 30-40% for client meetings and events",
+            "US work authorization (no visa sponsorship)",
+        ],
+        "bonus": [
+            "You've built pitch books, offering memorandums, proposals, or investor materials",
+            "Early-stage startup experience, or real estate credentials like a Masters in Real Estate",
+        ],
+        "steps": [
+            ("Initial screen", "With Stephanie: background and fit (30 min)"),
+            ("CRO interview", "With Amit Sarin: sales experience and strategy (30 min)"),
+            ("Meet the CEO", "Handling complex sales scenarios (30 min)"),
         ],
     },
 ]

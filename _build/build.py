@@ -160,6 +160,7 @@ def role_page(r):
 
 
 def index_page(active):
+    active = [r for r in active if r.get("listed", True)]
     cards = "".join(f"""
     <a class="role-card" href="{r["slug"]}/">
       <span class="eyebrow">{e(r["tag"])}</span>
